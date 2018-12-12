@@ -1,5 +1,5 @@
 # tic-tac-toe-game
-Simple Tic-Tac-Toe Implementation
+Simple Tic-Tac-Toe Implementation meant to be run from command prompt.
 
 The positions on the board are represented as such: 
 
