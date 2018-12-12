@@ -1,0 +1,42 @@
+public static class Board
+	{
+		
+		//123
+		//456
+		//789
+		int size;
+		char[] positionNumbers;
+		boolean gameOver;
+		
+		Board(int size)
+		{
+			positionNumbers = new char[size*size];
+			for(int i=0; i< positionNumbers.length; i++)
+			{
+				positionNumbers[i]='-';
+			}
+			this.size=size;
+			gameOver=false;
+		}
+		
+		void updateBoard(int boardPos, char playerMarker)
+		{
+			positionNumbers[boardPos] = playerMarker;
+		}
+		
+		void showBoard()
+		{
+			System.out.println("\n");
+			for(int i=0; i< positionNumbers.length; i++)
+			{
+				if(i%size == size-1)
+				{
+					System.out.println(positionNumbers[i]);
+				}
+				else
+				{
+					System.out.print(positionNumbers[i]);
+				}	
+			}	
+		
+		}	
